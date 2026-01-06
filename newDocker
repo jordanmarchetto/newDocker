@@ -58,7 +58,6 @@ fi
 # ---- file creation ----
 cp "$DOCKER_COMPOSE_TEMPLATE" "$TARGET_DIR/docker-compose.yml"
 cp "$ENV_TEMPLATE" "$TARGET_DIR/.env"
-cp "$REMINDERS_TEMPLATE" "$TARGET_DIR/reminders.txt"
 
 # ---- service name replacement ----
 sed -i.bak \
@@ -69,6 +68,7 @@ rm "$TARGET_DIR/docker-compose.yml.bak"
 # ---- output reminders ----
 echo
 echo "========== REMINDERS =========="
-cat "$TARGET_DIR/reminders.txt"
+cat "$TEMPLATE_FOLDER/reminders.txt"
 echo "==============================="
+
 
