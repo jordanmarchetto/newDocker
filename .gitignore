@@ -1,1 +1,4 @@
 .env
+templates/.env
+templates/docker-compose.yml
+templates/reminders.txt
